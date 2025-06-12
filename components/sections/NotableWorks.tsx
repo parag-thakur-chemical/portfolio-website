@@ -12,7 +12,7 @@ const stats = [
 
 export default function NotableWorks() {
   return (
-    <section className="py-8 bg-white rounded-xl shadow mb-4">
+    <section className="py-8 bg-white rounded-xl shadow mb-4 px-6">
       <h2 className="text-2xl font-bold text-purple-700 mb-2">Research at a Glance</h2>
       <p className="text-gray-700 mb-4">A snapshot of Dr. Thakur's academic contributions and professional activities.</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">

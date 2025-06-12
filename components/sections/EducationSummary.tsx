@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function EducationSummary() {
   return (
-    <section className="py-8 bg-white rounded-xl shadow mb-4">
+    <section className="py-8 bg-white rounded-xl shadow mb-4 px-6">
       <h2 className="text-2xl font-bold text-purple-700 mb-2">Education</h2>
       <p className="text-gray-700 mb-4">Ph.D. in Chemical Engineering from VNIT, Nagpur, with a strong foundation in research and academic excellence.</p>
       <div className="rounded-lg border bg-purple-50 p-4 shadow mb-4">
