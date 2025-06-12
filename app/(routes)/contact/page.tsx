@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Globe, Linkedin, GraduationCap, BookOpen } from "lucide-react";
+import { Linkedin, GraduationCap, BookOpen } from "lucide-react";
 
 export default function ContactPage() {
   const contactInfo = {
