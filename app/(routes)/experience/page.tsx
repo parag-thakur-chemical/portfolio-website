@@ -71,53 +71,54 @@ export default function ExperiencePage() {
   };
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 space-y-6 sm:space-y-8">
-      <div className="text-center mb-6 sm:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Professional Experience</h1>
-        <p className="text-muted-foreground text-sm sm:text-base">
+    <div className="space-y-12">
+      {/* Page Header */}
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Professional Experience</h1>
+        <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
           A comprehensive overview of my academic and professional journey
         </p>
       </div>
 
       {/* Professional Experience Section */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Professional Journey</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Professional Journey</h2>
+        <div className="grid gap-6">
           {professionalExperience.map((exp, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{exp.role}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{exp.organization}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{exp.role}</CardTitle>
+                    <p className="text-base text-muted-foreground">{exp.organization}</p>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{exp.duration}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{exp.duration}</Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm sm:text-base">{exp.details}</p>
+                <p className="text-base">{exp.details}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Administrative Roles Section */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Administrative Roles</h2>
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Administrative Roles</h2>
         <div className="grid gap-6 sm:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">Institute Level</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl">Institute Level</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {administrativeRoles.institute.map((role, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-sm sm:text-base text-muted-foreground">•</span>
-                    <p className="text-sm sm:text-base">{role}</p>
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-muted-foreground mt-1">•</span>
+                    <p className="text-base">{role}</p>
                   </li>
                 ))}
               </ul>
@@ -126,14 +127,14 @@ export default function ExperiencePage() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">Department Level</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl">Department Level</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {administrativeRoles.department.map((role, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-sm sm:text-base text-muted-foreground">•</span>
-                    <p className="text-sm sm:text-base">{role}</p>
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-muted-foreground mt-1">•</span>
+                    <p className="text-base">{role}</p>
                   </li>
                 ))}
               </ul>
@@ -142,22 +143,22 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Teaching Experience Section */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Teaching Experience</h2>
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Teaching Experience</h2>
         <div className="grid gap-6 sm:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">Theory Courses</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl">Theory Courses</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {teachingExperience.theory.map((course, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-sm sm:text-base text-muted-foreground">•</span>
-                    <p className="text-sm sm:text-base">{course}</p>
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-muted-foreground mt-1">•</span>
+                    <p className="text-base">{course}</p>
                   </li>
                 ))}
               </ul>
@@ -166,14 +167,14 @@ export default function ExperiencePage() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">Laboratory Courses</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl">Laboratory Courses</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {teachingExperience.practicals.map((course, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-sm sm:text-base text-muted-foreground">•</span>
-                    <p className="text-sm sm:text-base">{course}</p>
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-muted-foreground mt-1">•</span>
+                    <p className="text-base">{course}</p>
                   </li>
                 ))}
               </ul>

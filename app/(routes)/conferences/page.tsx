@@ -78,54 +78,59 @@ export default function ConferencesPage() {
   ];
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 space-y-6 sm:space-y-8">
-      <div className="text-center mb-6 sm:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Conferences & Presentations</h1>
-        <p className="text-muted-foreground text-sm sm:text-base">
+    <div className="space-y-12">
+      {/* Page Header */}
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Conferences & Presentations</h1>
+        <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
           Academic contributions and participation in scientific conferences
         </p>
       </div>
 
       {/* Conference Presentations */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Conference Presentations</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Conference Presentations</h2>
+        <div className="grid gap-6">
           {conferencePresentations.map((conf, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{conf.title}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{conf.conference}</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{conf.organization}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{conf.title}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{conf.conference}</p>
+                      <p className="text-base text-muted-foreground">{conf.organization}</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{conf.date}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{conf.date}</Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm sm:text-base">{conf.details}</p>
+                <p className="text-base">{conf.details}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Session Chair Roles */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Session Chair Roles</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Session Chair Roles</h2>
+        <div className="grid gap-6">
           {sessionChairRoles.map((role, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{role.conference}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{role.organization}</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{role.role}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{role.conference}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{role.organization}</p>
+                      <p className="text-base text-muted-foreground">{role.role}</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{role.date}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{role.date}</Badge>
                 </div>
               </CardHeader>
             </Card>
@@ -133,22 +138,24 @@ export default function ConferencesPage() {
         </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Conference Attendance */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Conference Attendance</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Conference Attendance</h2>
+        <div className="grid gap-6">
           {conferenceAttendance.map((conf, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{conf.title}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{conf.organization}</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{conf.format}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{conf.title}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{conf.organization}</p>
+                      <p className="text-base text-muted-foreground">{conf.format}</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{conf.date}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{conf.date}</Badge>
                 </div>
               </CardHeader>
             </Card>

@@ -55,57 +55,62 @@ export default function EducationPage() {
   ];
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 space-y-6 sm:space-y-8">
-      <div className="text-center mb-6 sm:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Educational Background</h1>
-        <p className="text-muted-foreground text-sm sm:text-base">
+    <div className="space-y-12">
+      {/* Page Header */}
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Educational Background</h1>
+        <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
           Academic journey and professional development
         </p>
       </div>
 
       {/* Academic Qualifications */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Academic Qualifications</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Academic Qualifications</h2>
+        <div className="grid gap-6">
           {educationDetails.map((edu, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{edu.degree}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{edu.specialization}</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{edu.institution}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{edu.degree}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{edu.specialization}</p>
+                      <p className="text-base text-muted-foreground">{edu.institution}</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{edu.duration}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{edu.duration}</Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm sm:text-base">{edu.details}</p>
+                <p className="text-base">{edu.details}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Additional Training */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Professional Development</h2>
-        <div className="grid gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Professional Development</h2>
+        <div className="grid gap-6">
           {additionalTraining.map((training, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4">
-                  <div>
-                    <CardTitle className="text-lg sm:text-xl">{training.title}</CardTitle>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{training.organization}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{training.title}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{training.organization}</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="w-fit">{training.duration}</Badge>
+                  <Badge variant="secondary" className="w-fit text-sm">{training.duration}</Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm sm:text-base">{training.details}</p>
+                <p className="text-base">{training.details}</p>
               </CardContent>
             </Card>
           ))}

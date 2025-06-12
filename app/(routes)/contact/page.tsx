@@ -47,104 +47,95 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 space-y-6 sm:space-y-8">
-      <div className="text-center mb-6 sm:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Contact Information</h1>
-        <p className="text-muted-foreground text-sm sm:text-base">
-          Get in touch and connect through professional networks
+    <div className="space-y-12">
+      {/* Page Header */}
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Contact & Profiles</h1>
+        <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+          Get in touch and connect through various professional platforms
         </p>
       </div>
 
       {/* Contact Information */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-        <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <CardTitle className="text-xl sm:text-2xl">Contact Details</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex items-start space-x-3">
-              <MapPin className="w-5 h-5 mt-1 text-muted-foreground flex-shrink-0" />
-              <p className="text-sm sm:text-base text-muted-foreground">{contactInfo.address}</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Phone className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-              <p className="text-sm sm:text-base text-muted-foreground">{contactInfo.phone}</p>
-            </div>
-            <div className="space-y-2">
-              {contactInfo.email.map((email, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-                  <a href={`mailto:${email}`} className="text-sm sm:text-base text-muted-foreground hover:underline break-all">
-                    {email}
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Contact Information</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Academic Contact</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-base font-medium">Department of Chemical Engineering</p>
+                <p className="text-base text-muted-foreground">Sardar Vallabhbhai National Institute of Technology</p>
+                <p className="text-base text-muted-foreground">Surat, Gujarat - 395007, India</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-base">
+                  <span className="font-medium">Email:</span>{" "}
+                  <a href="mailto:parag.thakur@svnit.ac.in" className="text-primary hover:underline">
+                    parag.thakur@svnit.ac.in
                   </a>
-                </div>
-              ))}
-            </div>
-            <div className="flex items-center space-x-3">
-              <Globe className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-              <p className="text-sm sm:text-base text-muted-foreground">
-                ORCID:{" "}
-                <a
-                  href={`https://orcid.org/${contactInfo.orcid}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline break-all"
-                >
-                  {contactInfo.orcid}
-                </a>
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+                </p>
+                <p className="text-base">
+                  <span className="font-medium">Phone:</span>{" "}
+                  <a href="tel:+91-261-2201730" className="text-primary hover:underline">
+                    +91-261-2201730
+                  </a>
+                </p>
+              </div>
+            </CardContent>
+          </Card>
 
-        <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <CardTitle className="text-xl sm:text-2xl">Research Metrics</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold mb-3 text-base sm:text-lg">Google Scholar</h3>
-                <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                  <div className="text-center p-2 sm:p-3 bg-muted/50 rounded-lg">
-                    <p className="text-xl sm:text-2xl font-bold">{researchMetrics.googleScholar.citations}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">Citations</p>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Research Metrics</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-6">
+                <div>
+                  <h3 className="font-semibold mb-4 text-base sm:text-lg">Google Scholar</h3>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="text-center p-4 bg-muted/50 rounded-lg">
+                      <p className="text-2xl sm:text-3xl font-bold">{researchMetrics.googleScholar.citations}</p>
+                      <p className="text-sm text-muted-foreground">Citations</p>
+                    </div>
+                    <div className="text-center p-4 bg-muted/50 rounded-lg">
+                      <p className="text-2xl sm:text-3xl font-bold">{researchMetrics.googleScholar.hIndex}</p>
+                      <p className="text-sm text-muted-foreground">h-index</p>
+                    </div>
+                    <div className="text-center p-4 bg-muted/50 rounded-lg">
+                      <p className="text-2xl sm:text-3xl font-bold">{researchMetrics.googleScholar.i10Index}</p>
+                      <p className="text-sm text-muted-foreground">i10-index</p>
+                    </div>
                   </div>
-                  <div className="text-center p-2 sm:p-3 bg-muted/50 rounded-lg">
-                    <p className="text-xl sm:text-2xl font-bold">{researchMetrics.googleScholar.hIndex}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">h-index</p>
-                  </div>
-                  <div className="text-center p-2 sm:p-3 bg-muted/50 rounded-lg">
-                    <p className="text-xl sm:text-2xl font-bold">{researchMetrics.googleScholar.i10Index}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">i10-index</p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-4 text-base sm:text-lg">Scopus</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center p-4 bg-muted/50 rounded-lg">
+                      <p className="text-2xl sm:text-3xl font-bold">{researchMetrics.scopus.citations}</p>
+                      <p className="text-sm text-muted-foreground">Citations</p>
+                    </div>
+                    <div className="text-center p-4 bg-muted/50 rounded-lg">
+                      <p className="text-2xl sm:text-3xl font-bold">{researchMetrics.scopus.hIndex}</p>
+                      <p className="text-sm text-muted-foreground">h-index</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <Separator />
-              <div>
-                <h3 className="font-semibold mb-3 text-base sm:text-lg">Scopus</h3>
-                <div className="grid grid-cols-2 gap-2 sm:gap-4">
-                  <div className="text-center p-2 sm:p-3 bg-muted/50 rounded-lg">
-                    <p className="text-xl sm:text-2xl font-bold">{researchMetrics.scopus.citations}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">Citations</p>
-                  </div>
-                  <div className="text-center p-2 sm:p-3 bg-muted/50 rounded-lg">
-                    <p className="text-xl sm:text-2xl font-bold">{researchMetrics.scopus.hIndex}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">h-index</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
-      <Separator />
+      <Separator className="my-8" />
 
       {/* Professional Profiles */}
-      <section className="space-y-4">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Professional Profiles</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Professional Profiles</h2>
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {professionalProfiles.map((profile, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
@@ -152,11 +143,11 @@ export default function ContactPage() {
                   href={profile.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center space-y-3"
+                  className="flex flex-col items-center space-y-4"
                 >
                   <profile.icon className="w-8 h-8 text-muted-foreground" />
-                  <p className="font-medium text-sm sm:text-base">{profile.platform}</p>
-                  <Button variant="outline" className="w-full text-sm sm:text-base">
+                  <p className="font-medium text-base">{profile.platform}</p>
+                  <Button variant="outline" className="w-full">
                     Visit Profile
                   </Button>
                 </a>
