@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
         <div className="mt-4 flex gap-2 flex-wrap">
           <Button asChild size="sm" variant="outline">
-            <a href="https://www.linkedin.com/in/parag-Thakur-50255813b/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/dr-parag-thakur-50255813b/" target="_blank">LinkedIn</a>
           </Button>
           <Button asChild size="sm" variant="outline">
             <a href="https://www.researchgate.net/profile/Parag_Thakur" target="_blank">ResearchGate</a>

@@ -1,20 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Linkedin, GraduationCap, BookOpen } from "lucide-react";
+import { Globe, Linkedin, GraduationCap, BookOpen } from "lucide-react";
 
 export default function ContactPage() {
-  const contactInfo = {
-    address: "003, Chem. Engg. Dept., Sardar Vallabhbhai National Institute of Technology, Surat-395 007 (Gujarat) INDIA",
-    phone: "+91 89992 54795",
-    email: ["paragthakur674@gmail.com", "paragthakur@ched.svnit.ac.in"],
-    orcid: "0000-0003-2227-0143",
-  };
 
   const professionalProfiles = [
     {
       platform: "LinkedIn",
-      url: "https://www.linkedin.com/in/parag-Thakur-50255813b/",
+      url: "https://www.linkedin.com/in/dr-parag-thakur-50255813b/",
       icon: Linkedin,
     },
     {

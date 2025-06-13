@@ -21,7 +21,7 @@ export default function ResearchInterestsSummary() {
         </ul>
       </div>
       <Button asChild variant="outline">
-        <a href="/(routes)/research">See all research interests</a>
+        <a href="/research">See all research interests</a>
       </Button>
     </section>
   );

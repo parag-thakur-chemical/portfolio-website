@@ -11,7 +11,7 @@ export default function EducationSummary() {
         <div className="text-xs text-gray-500">2019 – 2022</div>
       </div>
       <Button asChild variant="outline">
-        <a href="/(routes)/education">See all education</a>
+        <a href="/education">See all education</a>
       </Button>
     </section>
   );

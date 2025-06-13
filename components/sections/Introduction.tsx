@@ -8,7 +8,7 @@ export default function Introduction() {
         Dr. Parag Thakur is an Assistant Professor at Sardar Vallabhbhai National Institute of Technology, Surat (INDIA). His research focuses on nanotechnology, biotechnology, waste to energy, renewable energy conservation and effective utilization, and data science. He has published 10 journal articles, holds 3 patents, contributed to 35 book chapters, authored 2 books, and presented at 34 conferences. Dr. Thakur is passionate about advancing chemical engineering education and research, and is actively involved in guiding students and organizing academic events.
       </p>
       <Button asChild variant="default">
-        <a href="/cv.pdf" download>Download CV</a>
+        <a href="/Parag CV.pdf" download>Download CV</a>
       </Button>
     </section>
   );

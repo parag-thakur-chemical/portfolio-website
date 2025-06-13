@@ -24,7 +24,7 @@ export default function NotableWorks() {
         ))}
       </div>
       <Button asChild variant="outline">
-        <a href="/(routes)/research">See all research</a>
+        <a href="/research">See all research</a>
       </Button>
     </section>
   );

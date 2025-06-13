@@ -11,7 +11,7 @@ export default function ExperienceSummary() {
         <div className="text-xs text-gray-500">Oct 2023 – Present</div>
       </div>
       <Button asChild variant="outline">
-        <a href="/(routes)/experience">See all experience</a>
+        <a href="/experience">See all experience</a>
       </Button>
     </section>
   );
