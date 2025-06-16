@@ -83,27 +83,6 @@ export default function TeachingPage() {
     ],
   };
 
-  const workshopsOrganized = [
-    {
-      title: "Instrumentation Techniques for Environmental Remediation",
-      organization: "SVNIT, Surat",
-      date: "May 2025",
-      type: "One-week STTP",
-    },
-    {
-      title: "Introduction to Chemical Engineering Software",
-      organization: "SVNIT, Surat",
-      date: "January 2025",
-      type: "6-days STTP",
-    },
-    {
-      title: "Instrumentation Techniques for Environmental Remediation",
-      organization: "SVNIT, Surat",
-      date: "May 2024",
-      type: "One-week STTP",
-    },
-  ];
-
   return (
     <div className="container mx-auto py-8 space-y-8">
       <div className="text-center mb-8">
@@ -238,31 +217,6 @@ export default function TeachingPage() {
               </ul>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      <Separator />
-
-      {/* Workshops Organized */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">Workshops Organized</h2>
-        <div className="grid gap-4">
-          {workshopsOrganized.map((workshop, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <CardTitle className="text-xl">{workshop.title}</CardTitle>
-                    <p className="text-muted-foreground mt-1">{workshop.organization}</p>
-                  </div>
-                  <div className="flex flex-col items-end space-y-2">
-                    <Badge variant="secondary">{workshop.date}</Badge>
-                    <Badge variant="outline">{workshop.type}</Badge>
-                  </div>
-                </div>
-              </CardHeader>
-            </Card>
-          ))}
         </div>
       </section>
     </div>

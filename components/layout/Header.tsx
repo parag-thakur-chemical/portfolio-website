@@ -7,6 +7,7 @@ const navLinks = [
   { name: "Education", href: "/education" },
   { name: "Teaching", href: "/teaching" },
   { name: "Outreach Activities", href: "/conferences" },
+  { name: "News", href: "/news" },
 ];
 
 export default function Header() {
