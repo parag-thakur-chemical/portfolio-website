@@ -3,12 +3,10 @@ import Link from "next/link";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Research", href: "/research" },
-  { name: "Experience", href: "/experience" },
+  { name: "Administrative Roles", href: "/administrative-roles" },
   { name: "Education", href: "/education" },
   { name: "Teaching", href: "/teaching" },
-  { name: "Conferences", href: "/conferences" },
-  { name: "Workshops", href: "/workshops" },
-  { name: "Contact", href: "/contact" },
+  { name: "Outreach Activities", href: "/conferences" },
 ];
 
 export default function Header() {
