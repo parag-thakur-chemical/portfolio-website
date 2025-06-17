@@ -4,7 +4,6 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Research", href: "/research" },
   { name: "Administrative Roles", href: "/administrative-roles" },
-  { name: "Education", href: "/education" },
   { name: "Teaching", href: "/teaching" },
   { name: "Outreach Activities", href: "/conferences" },
   { name: "News", href: "/news" },
