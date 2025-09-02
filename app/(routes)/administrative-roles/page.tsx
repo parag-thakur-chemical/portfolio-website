@@ -5,6 +5,10 @@ export default function ExperiencePage() {
   const administrativeRoles = {
     institute: [
       {
+         title: "Member Secretary, Orientation Program for BTech , MTech , MBA and PhD students admitted in Year 2025-26",
+         subtitle: "2025-26"
+      },
+      {
         title: "Member, BTech and M Sc Admission committee through JoSAA/CSAB 2025",
         subtitle: "Academic Year 2025-26"
       },
@@ -33,10 +37,6 @@ export default function ExperiencePage() {
           "Mr. Gajera Jeet Bhovanbhai (Roll No. D20MA007), Date: 10/04/2024",
           "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025"
         ]
-      },
-      {
-         title: "Member Secretary, Orientation Program for BTech, MTech MBA and PhD students admitted in Year 2025-26",
-         subtitle: "2025-26"
       },
     ],
     department: [
