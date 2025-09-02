@@ -33,7 +33,11 @@ export default function ExperiencePage() {
           "Mr. Gajera Jeet Bhovanbhai (Roll No. D20MA007), Date: 10/04/2024",
           "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025"
         ]
-      }
+      },
+      {
+         title: "Member Secretary, Orientation Program for BTech, MTech MBA and PhD students admitted in Year 2025-26",
+         subtitle: 2025-26
+      },
     ],
     department: [
       {
