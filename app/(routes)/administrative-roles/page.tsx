@@ -36,7 +36,7 @@ export default function ExperiencePage() {
       },
       {
          title: "Member Secretary, Orientation Program for BTech, MTech MBA and PhD students admitted in Year 2025-26",
-         subtitle: 2025-26
+         subtitle: "2025-26"
       },
     ],
     department: [
