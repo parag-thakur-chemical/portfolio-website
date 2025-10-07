@@ -40,8 +40,7 @@ export default function ExperiencePage() {
       },
       {
         title: "Warden , Bhabha Bhavan",
-        subtitle: "8/10/2025 - Till Date"
-        ]
+        subtitle: "8/10/2025 - Till Date",
       },
     ],
     department: [
