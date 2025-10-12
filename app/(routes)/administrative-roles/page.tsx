@@ -42,6 +42,13 @@ export default function ExperiencePage() {
           "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025"
         ]
       },
+      {
+        title: "Member, Organising Committee, 21st Convocation",
+        subtitle:"SVNIT, Surat"
+      },
+      {
+        title: "Member, Committee for National Institutional Ranking Framework (NIRF)",
+      },
     ],
     department: [
       {
