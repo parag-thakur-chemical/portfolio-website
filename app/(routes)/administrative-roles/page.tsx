@@ -26,7 +26,7 @@ export default function ExperiencePage() {
       },
       {
         title: "Member, Anti-Ragging Committee, Boys hostel (Gajjar Bhavan)",
-        subtitle: "Academic Year 2025-26"
+        subtitle: "Academic Year 2024-26"
       },
       {
         title: "Invigilation duties",
