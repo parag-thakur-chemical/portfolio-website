@@ -39,7 +39,8 @@ export default function ExperiencePage() {
         title: "Member, PhD Thesis Evaluation Committee",
         items: [
           "Mr. Gajera Jeet Bhovanbhai (Roll No. D20MA007), Date: 10/04/2024",
-          "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025"
+          "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025",
+          "Mr. Digvijay (Roll No. DS20CH002) ,Date: 15 Oct 2025"
         ]
       },
       {
