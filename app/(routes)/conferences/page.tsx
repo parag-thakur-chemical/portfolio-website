@@ -264,6 +264,12 @@ export default function ConferencesPage() {
       date: "May 13-17, 2024",
       details: "Workshop on instrumentation techniques and environmental remediation",
     },
+    {
+      title: "5-Days STTP on 'Introduction to Standards' sponsored by Beureu of Indian Standards",
+      organization: "SVNIT, Surat",
+      date: "2nd Oct, 4th Oct, 5th Oct, 11th Oct, 12th Oct, 2025",
+      details: "Workshop on indian standards",
+    },
   ];
 
   const workshopsAttended = [
@@ -470,7 +476,7 @@ export default function ConferencesPage() {
 
       {/* Session Chair Roles */}
       <section className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Session Chair Roles</h2>
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Session Chair Roles / Expert</h2>
         <div className="grid gap-6">
           {sessionChairRoles.map((role, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
