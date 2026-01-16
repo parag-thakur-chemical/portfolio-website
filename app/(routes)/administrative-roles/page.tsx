@@ -50,6 +50,12 @@ export default function ExperiencePage() {
       {
         title: "Member, Committee for National Institutional Ranking Framework (NIRF)",
       },
+      {
+        title:"Co-Chairperson, Mindbend - A Technical Event of SVNIT, Surat"
+      },
+      {
+        title:"Co-Chairperson, Chemical Engineering Society (ChES)"
+      },
     ],
     department: [
       {
