@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-8 py-8 bg-white rounded-xl shadow-lg relative overflow-hidden">
+    <section className="flex flex-col md:flex-row items-center gap-8 py-8 px-4 bg-white rounded-xl shadow-lg relative overflow-hidden">
       <div className="hidden md:block absolute left-0 top-0 h-full w-2 bg-gradient-to-b from-purple-400 to-purple-200 rounded-l-xl" />
       <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-xl overflow-hidden shadow bg-gradient-to-tr from-purple-200 to-purple-100 border-4 border-white mx-6">
         <Image

@@ -5,56 +5,49 @@ export default function ExperiencePage() {
   const administrativeRoles = {
     institute: [
       {
-        title: "Warden , Bhabha Bhavan",
+        title: "Warden, Bhabha Bhavan",
         subtitle: "8/10/2025 - Till Date",
       },
       {
-         title: "Member Secretary, Orientation Program for BTech , MTech , MBA and PhD students admitted in Year 2025-26",
-         subtitle: "2025-26"
+        title: "Member Secretary, Orientation Program for BTech, MTech, MBA and PhD students admitted in Year 2025-26",
+        subtitle: "2025-26"
+      },
+      {
+        title: "Member, Committee for National Institutional Ranking Framework (NIRF)",
       },
       {
         title: "Member, BTech and M Sc Admission committee through JoSAA/CSAB 2025",
         subtitle: "Academic Year 2025-26"
       },
       {
-        title: "Mentor, Capacity Building for Design & Entrepreneurship Development",
-        subtitle: "Academic Year 2025-26"
+        title: "Co-Chairperson, Mindbend - A Technical Event of SVNIT, Surat"
+      },
+      {
+        title: "Co-Chairperson, Chemical Engineering Society (ChES)"
       },
       {
         title: "Member, B Tech I, Fee Remission Committee",
         subtitle: "2023-24, 2024-25"
       },
       {
-        title: "Member, Anti-Ragging Committee, Boys hostel (Gajjar Bhavan)",
-        subtitle: "Academic Year 2024-26"
+        title: "Mentor, Capacity Building for Design & Entrepreneurship Development",
+        subtitle: "Academic Year 2025-26"
       },
       {
-        title: "Invigilation duties",
-        items: [
-          "Junior Assistant Exam (15-17 February 2025)",
-          "NEET (UG)-2025 (4 May 2025)"
-        ]
+        title: "Member, Anti-Ragging Committee, Boys hostel (Gajjar Bhavan)",
+        subtitle: "Academic Year 2024-26"
       },
       {
         title: "Member, PhD Thesis Evaluation Committee",
         items: [
           "Mr. Gajera Jeet Bhovanbhai (Roll No. D20MA007), Date: 10/04/2024",
           "Ms. Rashmita Behera (Roll No. DS19CH001), Date: 06/06/2025",
-          "Mr. Digvijay (Roll No. DS20CH002) ,Date: 15 Oct 2025"
+          "Mr. Digvijay (Roll No. DS20CH002), Date: 15 Oct 2025"
         ]
       },
       {
         title: "Member, Organising Committee, 21st Convocation",
-        subtitle:"SVNIT, Surat"
-      },
-      {
-        title: "Member, Committee for National Institutional Ranking Framework (NIRF)",
-      },
-      {
-        title:"Co-Chairperson, Mindbend - A Technical Event of SVNIT, Surat"
-      },
-      {
-        title:"Co-Chairperson, Chemical Engineering Society (ChES)"
+        subtitle: "SVNIT, Surat"
       },
     ],
     department: [
