@@ -4,6 +4,7 @@ import NotableWorks from "@/components/sections/NotableWorks";
 import ExperienceSummary from "@/components/sections/ExperienceSummary";
 import EducationSummary from "@/components/sections/EducationSummary";
 import ResearchInterestsSummary from "@/components/sections/ResearchInterestsSummary";
+import ProfessionalSummary from "@/components/sections/ProfessionalSummary";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="space-y-8 sm:space-y-12 md:space-y-16">
         <Hero />
         <Introduction />
+        <ProfessionalSummary />
         <NotableWorks />
         <ExperienceSummary />
         <EducationSummary />
