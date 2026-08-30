@@ -11,6 +11,15 @@ export const metadata: Metadata = {
 export default function ResearchPage() {
   const journalArticles = [
     {
+      title: "Group III–V xenes at the biointerface: Monoelemental 2D platforms for biosensing, cancer nanotheranostics and regeneration",
+      authors: "Jayraj Rana, Parag Thakur, Malika Manjakuppam, Arvind Kumar Mungray, Shriram Sonawane",
+      journal: "Nano-Structures & Nano-Objects",
+      year: "2026",
+      volume: "46",
+      doi: "10.1016/j.nanoso.2026.101628",
+      link: "https://doi.org/10.1016/j.nanoso.2026.101628",
+    },
+    {
       title: "Recent Advances in the Applications of Green Synthesized Nanoparticle Based Nanofluids for the Environmental Remediation",
       authors: "Shriram S. Sonawane, Parag P. Thakur, Manjakuppam Malika, Hafiz Muhammad Ali",
       journal: "Current Pharmaceutical Biotechnology",
@@ -128,13 +137,15 @@ export default function ResearchPage() {
       title: "Biological degradation of Sulphur waste from the mill rejects of thermal power plant",
       applicationNumber: "202221047477",
       filingDate: "August 20, 2022",
-      publicationDate: "April 14, 2023",
+      grantDate: "June 12, 2025",
+      patentNumber: "567372",
     },
     {
       title: "Development of Novel Process for micro-reactor-based Extraction of Heavy Antimony using ionic liquid-based Hybrid Nanofluids",
       applicationNumber: "202321016794",
       filingDate: "March 13, 2023",
-      publicationDate: "May 12, 2023",
+      grantDate: "May 22, 2026",
+      patentNumber: "590073",
     },
   ];
 
@@ -149,7 +160,8 @@ export default function ResearchPage() {
     {
       title: "Nanofluids for Efficient Energy Conservation and Process intensification",
       publisher: "CRC Press, Taylor and Francis publications",
-      year: "2025",
+      year: "2026",
+      isbn: "9781041043683",
     },
   ];
 
@@ -536,6 +548,34 @@ export default function ResearchPage() {
     },
   ];
 
+  const researchProjects = [
+    {
+      title: "Development of Stable Hybrid Nanofluid System for CO2 Absorption",
+      details: "SVNIT Surat Seed Money Grant (Phase-III), 01 May 2026 to 30 April 2028",
+      value: "₹10,00,000",
+    },
+  ];
+
+  const guestEditorRoles = [
+    "Current Pharmaceutical Biotechnology, Bentham Science Publications (July 2025-June 2026)",
+    "Water Environment Research, Wiley Publications",
+  ];
+
+  const reviewerJournals = [
+    "Separation Science & Technology",
+    "Current Pharmaceutical Biotechnology",
+    "Current Nanomedicine",
+  ];
+
+  const certificationsAndMemberships = [
+    "Certified Auditor, Gujarat Pollution Control Board, Government of Gujarat",
+    "Member, Institution of Engineers",
+  ];
+
+  const researchCollaborations = [
+    "Green Gene Enviro Protection and Infrastructure Ltd, Surat (GGEPIL) - August 2026 to Present",
+  ];
+
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
       <div className="space-y-8">
@@ -704,6 +744,82 @@ export default function ResearchPage() {
               </Card>
             ))}
           </div>
+        </section>
+
+
+        <Separator className="my-8" />
+
+        <section className="space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Research Projects</h2>
+          <div className="grid gap-6">
+            {researchProjects.map((project, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl sm:text-2xl">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-muted-foreground">{project.details}</p>
+                  <p className="text-base font-medium mt-2">Project Value: {project.value}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+
+        <section className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Guest Editor Roles</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                {guestEditorRoles.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Reviewer of Journals</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                {reviewerJournals.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Certification & Memberships</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                {certificationsAndMemberships.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl">Industry Collaboration / Consultancy</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                {researchCollaborations.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </section>
       </div>
     </div>
