@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 export default function ResearchPage() {
   const journalArticles = [
     {
+      title: "Group III–V xenes at the biointerface: Monoelemental 2D platforms for biosensing, cancer nanotheranostics and regeneration",
+      authors: "Jayraj Rana, Parag Thakur, Malika Manjakuppam, Arvind Kumar Mungray, Shriram Sonawane",
+      journal: "Nano-Structures & Nano-Objects",
+      year: "2026",
+      volume: "46",
+      pages: "May 2026",
+      impactFactor: "Q1 Scopus",
+      doi: "10.1016/j.nanoso.2026.101628",
+      link: "https://doi.org/10.1016/j.nanoso.2026.101628",
+    },
+    {
       title: "Recent Advances in the Applications of Green Synthesized Nanoparticle Based Nanofluids for the Environmental Remediation",
       authors: "Shriram S. Sonawane, Parag P. Thakur, Manjakuppam Malika, Hafiz Muhammad Ali",
       journal: "Current Pharmaceutical Biotechnology",
@@ -128,13 +139,48 @@ export default function ResearchPage() {
       title: "Biological degradation of Sulphur waste from the mill rejects of thermal power plant",
       applicationNumber: "202221047477",
       filingDate: "August 20, 2022",
-      publicationDate: "April 14, 2023",
+      grantDate: "June 12, 2025",
+      patentNumber: "567372",
     },
     {
       title: "Development of Novel Process for micro-reactor-based Extraction of Heavy Antimony using ionic liquid-based Hybrid Nanofluids",
       applicationNumber: "202321016794",
       filingDate: "March 13, 2023",
-      publicationDate: "May 12, 2023",
+      grantDate: "May 22, 2026",
+      patentNumber: "590073",
+    },
+  ];
+
+  const researchProjects = [
+    {
+      title: "Development of Stable hybrid nanofluid system for CO2 absorption",
+      funding: "SVNIT Surat Seed Money Grant (Phase-III)",
+      duration: "01.05.2026 – 30.04.2028",
+      amount: "₹10,00,000",
+    },
+  ];
+
+  const guestEditorRoles = [
+    {
+      journal: "Current Pharmaceutical Biotechnology, Bentham Science Publications",
+      impactFactor: "2.4",
+      duration: "July 2025 – June 2026",
+    },
+    {
+      journal: "Water Environment Research, Wiley Publications",
+      impactFactor: "1.9",
+    },
+  ];
+
+  const certifications = [
+    "Certified Auditor, Gujarat Pollution Control Board, Government of Gujarat",
+    "Member, Institution of Engineers",
+  ];
+
+  const industryCollaborations = [
+    {
+      organization: "Green Gene Enviro Protection and Infrastructure Ltd, Surat (GGEPIL)",
+      duration: "August 2026 – Present",
     },
   ];
 
@@ -147,21 +193,24 @@ export default function ResearchPage() {
       series: "Emerging Materials and Technologies series",
     },
     {
-      title: "Nanofluids for Efficient Energy Conservation and Process intensification",
+      title: "Nanofluids for Efficient Energy Conservation and Process Intensification",
       publisher: "CRC Press, Taylor and Francis publications",
-      year: "2025",
+      year: "2026",
+      isbn: "9781041043683",
     },
   ];
 
   const bookChapters = [
     {
-      title: "BiOX-based 2D composites for solar energy harvesting",
-      authors: "Parag P. Thakur, Shriram S. Sonawane",
-      book: "BiOX-based Photocatalysts for Dual Applications",
+      title: "Bi-OX-based 2D composites for solar energy harvesting",
+      authors: "Parag Thakur, Shriram Sonawane",
+      book: "Bi-OX-based Photocatalysts for Dual Applications",
       publisher: "ELSEVIER",
-      year: "2025",
+      year: "2026",
       isbn: "9780443238611",
       chapter: "32",
+      doi: "10.1016/B978-0-443-23861-1.00028-6",
+      link: "https://doi.org/10.1016/B978-0-443-23861-1.00028-6",
     },
     {
       title: "Current overview of applications of the hybrid nanofluids",
@@ -597,7 +646,7 @@ export default function ResearchPage() {
 
         {/* Patents */}
         <section className="space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Patents</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Patents Granted</h2>
           <div className="grid gap-6">
             {patents.map((patent, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
@@ -617,13 +666,83 @@ export default function ResearchPage() {
                           {patent.patentNumber && ` (Patent No. ${patent.patentNumber})`}
                         </p>
                       )}
-                      {patent.publicationDate && (
-                        <p className="text-base text-muted-foreground">
-                          Publication Date: {patent.publicationDate}
-                        </p>
+                    </div>
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+
+        {/* Research Projects */}
+        <section className="space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Research Projects</h2>
+          <div className="grid gap-6">
+            {researchProjects.map((project, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{project.title}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{project.funding}</p>
+                      <p className="text-base text-muted-foreground">Duration: {project.duration}</p>
+                      <p className="text-base text-muted-foreground">Amount: {project.amount}</p>
+                    </div>
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+
+        {/* Guest Editor */}
+        <section className="space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Guest Editor</h2>
+          <div className="grid gap-6">
+            {guestEditorRoles.map((role, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{role.journal}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">Impact Factor: {role.impactFactor}</p>
+                      {role.duration && (
+                        <p className="text-base text-muted-foreground">{role.duration}</p>
                       )}
                     </div>
                   </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+
+        {/* Certifications & Industry */}
+        <section className="space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Certifications, Memberships & Industry Collaboration</h2>
+          <div className="grid gap-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-xl sm:text-2xl">Certifications & Memberships</CardTitle>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-muted-foreground">
+                  {certifications.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </CardHeader>
+            </Card>
+            {industryCollaborations.map((collab, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl sm:text-2xl">Industry Research Collaboration / Consultancy</CardTitle>
+                  <p className="text-base text-muted-foreground mt-2">{collab.organization}</p>
+                  <p className="text-base text-muted-foreground">{collab.duration}</p>
                 </CardHeader>
               </Card>
             ))}

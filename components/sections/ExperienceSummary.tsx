@@ -11,16 +11,22 @@ export default function ExperienceSummary() {
       details: "Teaching and research in Chemical Engineering Department",
     },
     {
-      role: "Post-Doc Fellow",
-      organization: "Chonnam National University, South Korea",
-      duration: "June 2023 - September 2023",
-      details: "Research in nanotechnology and materials science",
+      role: "Visiting Faculty",
+      organization: "Gatishakti Vishwavidyalaya, Vadodara",
+      duration: "September 2025 - December 2025",
+      details: "Visiting faculty appointment",
     },
     {
       role: "Ad-hoc Faculty",
       organization: "National Institute of Technology, Warangal",
       duration: "August 2022 - May 2023",
       details: "Teaching and research responsibilities",
+    },
+    {
+      role: "Postdoctoral Research Invitation",
+      organization: "Chonnam National University, South Korea",
+      duration: "April 2023",
+      details: "Received an invitation for Postdoctoral Research",
     },
     {
       role: "Research Fellow",
@@ -68,4 +74,4 @@ export default function ExperienceSummary() {
       
     </section>
   );
-} 
+}

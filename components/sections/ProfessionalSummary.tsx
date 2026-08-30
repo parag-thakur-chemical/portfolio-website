@@ -13,7 +13,7 @@ const impactMetrics = [
   { label: "Google Scholar", value: "930 citations · H-index 15" },
   { label: "Scopus", value: "710 citations · H-index 13" },
   { label: "PhD Students", value: "6 ongoing" },
-  { label: "M.Tech Students", value: "2 completed" },
+  { label: "M.Tech Students", value: "2 completed · 1 ongoing" },
   { label: "Conference Activities", value: "37 total" },
   { label: "Workshops / STTP", value: "7 organized · 33 attended" },
 ];
@@ -23,7 +23,7 @@ export default function ProfessionalSummary() {
     <section className="py-8 bg-white rounded-xl shadow mb-4 px-6">
       <h2 className="text-2xl font-bold text-purple-700 mb-2">Professional Summary</h2>
       <p className="text-gray-700 mb-4">
-        Highlights from the CV that were not previously shown on the homepage UI.
+        Key academic metrics and impact indicators (CV updated 31 July 2026).
       </p>
       <div className="grid gap-4 md:grid-cols-2">
         <Card>

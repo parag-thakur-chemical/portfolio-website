@@ -4,24 +4,40 @@ export default function NewsPage() {
   const newsItems = {
     announcements: [
       {
-        title: "PhD Student Position Available",
-        description: "Applications are open for PhD positions in our research group. Interested candidates are encouraged to apply."
-      }
+        title: "Industry Research Collaboration with GGEPIL",
+        description: "Industry research collaboration / consultancy with Green Gene Enviro Protection and Infrastructure Ltd, Surat (GGEPIL) — August 2026–Present.",
+      },
+      {
+        title: "Seed Grant Awarded — ₹10 Lakh",
+        description: "Development of Stable hybrid nanofluid system for CO2 absorption by SVNIT Surat as Seed Money Grant (Phase-III), from 01.05.2026 to 30.04.2028 (₹10,00,000).",
+      },
+      {
+        title: "New Journal Publication (Q1)",
+        description: "Group III–V xenes at the biointerface published in Nano-Structures & Nano-Objects, Volume 46, May 2026 (https://doi.org/10.1016/j.nanoso.2026.101628).",
+      },
+      {
+        title: "PhD Student Achievement",
+        description: "Research paper by PhD Scholar Mr. Jayraj Rana accepted for presentation at the 2nd Global Cleaner Production Conference, Melia Sitges, Spain (Journal of Cleaner Production, ELSEVIER, IF 10.7, Q1), 26–29 October 2026.",
+      },
+      {
+        title: "Third Patent Granted",
+        description: "Patent No. 590073 granted on 22 May 2026: Development of Novel Process for micro-reactor-based Extraction of Heavy Antimony using ionic liquid-based Hybrid Nanofluids.",
+      },
     ],
     upcomingEvents: [
       {
-        title: "Introduction to Chemical Engineering Softwares (IChES-2.0)",
-        subtitle: "2nd Edition of Short Term Training Program",
-        description: "Dates: To be announced",
-        status: "upcoming"
+        title: "Advances in Sustainable Research for Energy and Environmental Management (ASREEM-2026)",
+        subtitle: "2nd Edition of International Conference — Secretary",
+        description: "Dates: May 15–17, 2026, SVNIT, Surat",
+        status: "upcoming",
       },
       {
-        title: "Advances in Sustainable Research for Energy and Environmental Management (ASREEM 2.0)",
-        subtitle: "2nd Edition of International Conference",
-        description: "Dates: February 13-15, 2026",
-        status: "upcoming"
-      }
-    ]
+        title: "2nd Global Cleaner Production Conference",
+        subtitle: "PhD Scholar Jayraj Rana — Accepted Presentation",
+        description: "Dates: 26–29 October 2026, Melia Sitges, Spain",
+        status: "upcoming",
+      },
+    ],
   };
 
   return (
@@ -71,4 +87,4 @@ export default function NewsPage() {
       </section>
     </div>
   );
-} 
+}

@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 
 const interests = [
-  "Nanotechnology",
-  "Bio-technology",
-  "Waste to energy",
-  "Renewable energy conservation",
-  "Data Science and analytics",
+  "Intensification and Sustainable Biological Processes",
+  "Nanomaterials Applications in Process Engineering",
+  "Data-Driven Sustainable Processes",
+  "Environmental Engineering",
 ];
 
 export default function ResearchInterestsSummary() {
@@ -25,4 +24,4 @@ export default function ResearchInterestsSummary() {
       </Button>
     </section>
   );
-} 
+}

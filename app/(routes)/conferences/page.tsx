@@ -3,18 +3,39 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 export default function ConferencesPage() {
+  const conferenceOrganized = [
+    {
+      conference: "2nd Edition of International Conference on Advances in Sustainable Research for Energy and Environmental Management (ASREEM-2026)",
+      organization: "SVNIT, Surat",
+      date: "May 15–17, 2026",
+      role: "Secretary",
+    },
+  ];
+
   const sessionChairRoles = [
     {
-      conference: "18th Annual Session of Chemical Engineering Students Congress (SCHEMCON 2022)",
-      organization: "NIT, Warangal",
-      date: "September 23-24, 2022",
-      role: "Session In-charge",
+      conference: "International Conference on Advances in Sustainable Technologies and Industrial Innovations (ICASTII-2026)",
+      organization: "Jawaharlal Darda Institute of Engineering and Technology, Yavatmal",
+      date: "March 24–25, 2026",
+      role: "Session Chair",
+    },
+    {
+      conference: "ASTHRA — National level Technical Symposium",
+      organization: "Department of Chemical Engg, BVRIT, Narsapur, Hyderabad, Telangana",
+      date: "October 17–18, 2025",
+      role: "Session Chair",
     },
     {
       conference: "International Conference on Education 5.0 - Role of Institution, Industry and Society (ERIIS-2022)",
       organization: "NIT, Warangal",
       date: "October 14-15, 2022",
-      role: "Session In-charge",
+      role: "Session Chair",
+    },
+    {
+      conference: "18th Annual Session of Chemical Engineering Students Congress (SCHEMCON 2022)",
+      organization: "NIT, Warangal",
+      date: "September 23-24, 2022",
+      role: "Session Chair",
     },
   ];
 
@@ -247,13 +268,37 @@ export default function ConferencesPage() {
 
   const workshopsOrganized = [
     {
+      title: "Workshop on 'Introduction to Python' in collaboration with IIT Bombay",
+      organization: "SVNIT, Surat",
+      date: "December 22–24, 2025",
+      details: "Python workshop organized in collaboration with IIT Bombay",
+    },
+    {
+      title: "3rd Edition of One-week STTP on 'Simulation Techniques for Engg. Problems'",
+      organization: "SVNIT, Surat",
+      date: "November 1–5, 2025",
+      details: "Short Term Training Program on simulation techniques",
+    },
+    {
+      title: "One-week STTP on 'Introduction to Standards' Sponsored by Bureau of Indian Standards",
+      organization: "SVNIT, Surat",
+      date: "2nd, 4th–5th, 10th–11th Oct 2025",
+      details: "Workshop on Indian standards",
+    },
+    {
+      title: "3rd National NITs Training & Placement (T&P) Conclave",
+      organization: "SVNIT, Surat",
+      date: "June 20, 2025",
+      details: "National T&P Conclave for NITs",
+    },
+    {
       title: "2nd Edition of One-week Short Term Training Program on 'Instrumentation Techniques for the environmental remediation and hands-on Training' (ITER-2025)",
       organization: "SVNIT, Surat",
       date: "May 19-23, 2025",
       details: "Workshop on instrumentation techniques and environmental remediation",
     },
     {
-      title: "1st Edition of 6-days Short Term Training Program (STTP) on 'Introduction to chemical engineering softwares' (IChES-25)",
+      title: "1st Edition of 6-days Short Term Training Program (STTP) on 'Introduction to Chemical Engineering Softwares' (IChES-25)",
       organization: "SVNIT, Surat",
       date: "January 11-12, 18-19, 25, February 1, 2025",
       details: "Training program on chemical engineering software applications",
@@ -264,15 +309,57 @@ export default function ConferencesPage() {
       date: "May 13-17, 2024",
       details: "Workshop on instrumentation techniques and environmental remediation",
     },
-    {
-      title: "5-Days STTP on 'Introduction to Standards' sponsored by Beureu of Indian Standards",
-      organization: "SVNIT, Surat",
-      date: "2nd Oct, 4th Oct, 5th Oct, 11th Oct, 12th Oct, 2025",
-      details: "Workshop on indian standards",
-    },
   ];
 
   const workshopsAttended = [
+    {
+      title: "4 days Faculty Development Program by Art of Living",
+      organization: "SVNIT, Surat",
+      date: "August 24–27, 2026",
+      details: "Faculty development program",
+    },
+    {
+      title: "Power Aware UAV Networks",
+      organization: "SVNIT, Surat",
+      date: "June 29, 2026",
+      details: "One day workshop",
+    },
+    {
+      title: "Design Education: Philosophy and Future Scope by Prof. Amit Ray",
+      organization: "SVNIT, Surat",
+      date: "April 15, 2026",
+      details: "One day lectures",
+    },
+    {
+      title: "Innovation, Problem Solving and Human Centered Design",
+      organization: "MasterCard, Pune",
+      date: "April 24, 2026",
+      details: "Faculty Development Program",
+    },
+    {
+      title: "Start-up awareness / sensitization program for Start-up",
+      organization: "SVNIT, Surat",
+      date: "March 23, 2026",
+      details: "One day program",
+    },
+    {
+      title: "University Relations Day",
+      organization: "MasterCard, Pune",
+      date: "February 13, 2026",
+      details: "One day program",
+    },
+    {
+      title: "Leadership, Motivation, Decision Making, and SWOT Analysis",
+      organization: "NITTTR, Bhopal",
+      date: "December 22–26, 2025",
+      details: "Online training programme",
+    },
+    {
+      title: "Pedagogy Workshop on Design Thinking and Entrepreneurship under CBDE, MMTTP",
+      organization: "SVNIT, Surat",
+      date: "July 8–9, 2025",
+      details: "Two days Pedagogy Workshop",
+    },
     {
       title: "Empowering educators: student centric teaching pedagogy",
       organization: "SVNIT, Surat",
@@ -292,8 +379,14 @@ export default function ConferencesPage() {
       details: "Two days workshop on pedagogy and entrepreneurship",
     },
     {
-      title: "Recent pedagogies for better learning",
-      organization: "Institute Guest House, SVNIT",
+      title: "Health Awareness Program",
+      organization: "SVNIT, Surat",
+      date: "February 22, 2025",
+      details: "1 day program",
+    },
+    {
+      title: "Recent Pedagogies for Better Learning",
+      organization: "SVNIT, Surat",
       date: "July 22-25, 2024",
       details: "4-day faculty development programme",
     },
@@ -302,6 +395,12 @@ export default function ConferencesPage() {
       organization: "SVNIT, Surat",
       date: "May 15-21, 2024",
       details: "One week faculty development program",
+    },
+    {
+      title: "Hindi Workshop",
+      organization: "SVNIT, Surat",
+      date: "April 29, 2024",
+      details: "1 day workshop",
     },
     {
       title: "Cyber-attacks and defense",
@@ -313,13 +412,13 @@ export default function ConferencesPage() {
       title: "Greener and cleaner ultrasonic process for the production of nanomaterials and nano-pharmaceuticals",
       organization: "NIT, Warangal",
       date: "June 27 - July 2, 2022",
-      details: "1 week GIAN (Global initiative of Academic network) with Foreign Faculty: Manickam Sivakumar, Brunei",
+      details: "1 week GIAN with Foreign Faculty: Manickam Sivakumar, Brunei",
     },
     {
       title: "Green Processing & Synthesis",
       organization: "VNIT, Nagpur",
       date: "May 2-6, 2022",
-      details: "1 week GIAN (Global initiative of Academic network) with Foreign Faculty: Prof. Ashok Kumar Muthupandian",
+      details: "1 week GIAN with Foreign Faculty: Prof. Ashok Kumar Muthupandian",
     },
     {
       title: "Writing and Evaluation of Scientific Research Articles",
@@ -406,32 +505,32 @@ export default function ConferencesPage() {
       details: "One-week short term training program (STTP)",
     },
     {
-      title: "Aspen plus, COMSOL, HINT, ANSYS FLUENT",
-      organization: "Chemical Engineering Department, IIT Bombay",
-      date: "2017",
-      details: "Two days Workshops at Azeotropy 2017",
-    },
-    {
       title: "Process Intensification: Fundamentals to Applications",
       organization: "University Institute of Chemical Technology, North Maharashtra University, Jalgaon",
       date: "December 26, 2016 - January 4, 2017",
       details: "Two-week short term training program (STTP)",
     },
-    {
-      title: "ASPEN Workshop",
-      organization: "Chemical Engineering Department, IIT Bombay",
-      date: "2015",
-      details: "Two days' Workshop at Azeotropy 2015",
-    },
-    {
-      title: "COMSOL Workshop",
-      organization: "U.I.C.T., Jalgaon",
-      date: "2014",
-      details: "One Day Workshop",
-    },
   ];
 
   const expertLectures = [
+    {
+      title: "Artificial Intelligence and Machine Learning",
+      organization: "National Conference on Cutting edge Research and Innovation 2026 (NCCERI-2026), Bharati Vidyapeeth, Pune",
+      date: "March 27–28, 2026",
+      details: "Invited talk",
+    },
+    {
+      title: "Data Driven hydrogen production systems",
+      organization: "International conference on Advances in Chemical Technology & Allied Sciences (ACTAS-2026), UICT, Jalgaon",
+      date: "January 6, 2026",
+      details: "Invited talk (conference: 6–7 January 2026)",
+    },
+    {
+      title: "Data Calculation, manipulation & Visualization in Python",
+      organization: "3rd Edition of One-week STTP on Simulation Techniques for Engg. Problems, SVNIT, Surat",
+      date: "November 1–5, 2025",
+      details: "Invited lecture",
+    },
     {
       title: "Expert Lecture at International Conference on Nano Structured Materials and Nanocomposites (ICN 2025)",
       organization: "Mahatma Gandhi University, Kottayam, Kerala",
@@ -439,28 +538,34 @@ export default function ConferencesPage() {
       details: "International Conference presentation",
     },
     {
-      title: "Expert Lecture at Instrumentation Techniques for the environmental remediation and hands-on Training (ITER-2025)",
-      organization: "SVNIT, Surat",
+      title: "Nanofluids based hydrogen storage systems",
+      organization: "AICTE-QIP-PG Programme on Advanced Metallic Alloys for Energy Storage Applications, Dept. of Mechanical Engineering, SVNIT, Surat",
+      date: "July 12, 2025",
+      details: "Invited lecture (programme: 16 June – 31 December 2025)",
+    },
+    {
+      title: "Data Science for Instrumentation Techniques",
+      organization: "2nd Edition of One-week STTP (ITER-2025), SVNIT, Surat",
       date: "May 21, 2025",
-      details: "2nd Edition of One-week STTP",
+      details: "Invited lecture",
     },
     {
-      title: "Expert Lecture at Introduction to chemical engineering software (IChES-25)",
-      organization: "SVNIT, Surat",
-      date: "January 12, 2025",
-      details: "1st Edition of 6-days STTP",
-    },
-    {
-      title: "Expert Lecture at Nanotechnology: Trends and Application",
-      organization: "Jawaharlal Darda Institute of Engineering and Technology, Yavatmal",
+      title: "Nanofluids: Fundamentals, Applications and Challenges",
+      organization: "One-week STTP on Nanotechnology: Trends and Application, JDIET, Yavatmal",
       date: "January 14, 2025",
-      details: "One-week STTP",
+      details: "Invited lecture",
     },
     {
-      title: "Expert Lecture at Instrumentation Techniques for the environmental remediation and hands-on Training (ITER-2024)",
-      organization: "SVNIT, Surat",
+      title: "Introduction to SCILAB",
+      organization: "1st Edition of 6-days STTP on Introduction to Chemical Engineering Software (IChES-25), SVNIT, Surat",
+      date: "January 12, 2025",
+      details: "Invited lecture",
+    },
+    {
+      title: "Application of nanotechnology in Wastewater treatment",
+      organization: "1st Edition of One-week STTP (ITER-2024), SVNIT, Surat",
       date: "May 15, 2024",
-      details: "1st Edition of One-week STTP",
+      details: "Invited lecture",
     },
   ];
 
@@ -474,9 +579,34 @@ export default function ConferencesPage() {
         </p>
       </div>
 
+      {/* Conference Organized */}
+      <section className="space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Conference Organized</h2>
+        <div className="grid gap-6">
+          {conferenceOrganized.map((role, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl sm:text-2xl">{role.conference}</CardTitle>
+                    <div className="space-y-1">
+                      <p className="text-base text-muted-foreground">{role.organization}</p>
+                      <p className="text-base text-muted-foreground">{role.role}</p>
+                    </div>
+                  </div>
+                  <Badge variant="secondary" className="w-fit text-sm">{role.date}</Badge>
+                </div>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <Separator className="my-8" />
+
       {/* Session Chair Roles */}
       <section className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Session Chair Roles / Expert</h2>
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Session Chair Roles</h2>
         <div className="grid gap-6">
           {sessionChairRoles.map((role, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
