@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 
 const stats = [
-  { label: "Journal Articles", value: 10 },
+  { label: "Journal Articles", value: 11 },
   { label: "Patents", value: 3 },
   { label: "Book Chapters", value: 35 },
   { label: "Books", value: 2 },
-  { label: "Conferences", value: 34 },
-  { label: "Workshops", value: 25 },
-  { label: "Reviewer", value: 1 },
+  { label: "Conferences", value: 37 },
+  { label: "Workshops", value: 40 },
+  { label: "Reviewer Journals", value: 3 },
 ];
 
 export default function NotableWorks() {
