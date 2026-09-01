@@ -7,10 +7,10 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Research", href: "/research" },
-  { name: "Administrative Roles", href: "/administrative-roles" },
   { name: "Teaching", href: "/teaching" },
+  { name: "Research", href: "/research" },
   { name: "Outreach Activities", href: "/conferences" },
+  { name: "Administrative Roles", href: "/administrative-roles" },
   { name: "News", href: "/news" },
 ];
 

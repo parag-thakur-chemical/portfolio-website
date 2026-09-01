@@ -2,6 +2,26 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function NewsPage() {
   const newsItems = {
+    upcomingEvents: [
+      {
+        title: "Invited Talk — Global Conference for Decarbonization of Energy and Materials 2026",
+        subtitle: "4th Edition · Nanyang Technological University, Singapore",
+        description: "Dr. Parag Thakur has received an invitation to deliver invited Talk in 4th Edition of global conference for decarbonization of energy and materials 2026 at Nanyang Technological University, Singapore (4-7 Nov. 2026)",
+        status: "upcoming",
+      },
+      {
+        title: "2nd Global Cleaner Production Conference",
+        subtitle: "PhD Scholar Jayraj Rana — Accepted Presentation",
+        description: "Dates: 26–29 October 2026, Melia Sitges, Spain",
+        status: "upcoming",
+      },
+      {
+        title: "PhD Positions",
+        subtitle: "Research group openings",
+        description: "PhD positions will open in Dec. 2026",
+        status: "upcoming",
+      },
+    ],
     announcements: [
       {
         title: "Industry Research Collaboration with GGEPIL",
@@ -24,47 +44,14 @@ export default function NewsPage() {
         description: "Patent No. 590073 granted on 22 May 2026: Development of Novel Process for micro-reactor-based Extraction of Heavy Antimony using ionic liquid-based Hybrid Nanofluids.",
       },
     ],
-    upcomingEvents: [
-      {
-        title: "Advances in Sustainable Research for Energy and Environmental Management (ASREEM-2026)",
-        subtitle: "2nd Edition of International Conference — Secretary",
-        description: "Dates: May 15–17, 2026, SVNIT, Surat",
-        status: "upcoming",
-      },
-      {
-        title: "2nd Global Cleaner Production Conference",
-        subtitle: "PhD Scholar Jayraj Rana — Accepted Presentation",
-        description: "Dates: 26–29 October 2026, Melia Sitges, Spain",
-        status: "upcoming",
-      },
-    ],
   };
 
   return (
     <div className="space-y-12">
       <section className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">News & Updates</h2>
-        
-        {/* Announcements Section */}
-        <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Announcements</h3>
-          <div className="grid gap-6">
-            {newsItems.announcements.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle className="text-xl">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
         {/* Upcoming Events Section */}
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Upcoming Events</h3>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">Upcoming Events</h2>
           <div className="grid gap-6">
             {newsItems.upcomingEvents.map((event, index) => (
               <Card key={index}>
@@ -79,6 +66,23 @@ export default function NewsPage() {
                     </span>
                     <p className="text-muted-foreground">{event.description}</p>
                   </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Announcements Section */}
+        <div className="space-y-4">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">News & Updates</h2>
+          <div className="grid gap-6">
+            {newsItems.announcements.map((item, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <CardTitle className="text-xl">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
